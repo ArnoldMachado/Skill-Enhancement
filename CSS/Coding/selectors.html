@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        h1 { font-size: 32px; }
+        p { color: gray; }
+        .card { background: #f9f9f9; padding: 20px; border-radius: 8px; color: #333; }
+        #header { background: black; color: white; padding: 15px; }
+        input[type="text"] { border: 1px solid #ccc; }
+        a[href^="https"] { color: green; }
+        a[href$=".pdf"] { color: red; }
+        li:first-child { font-weight: bold; }
+        li:nth-child(2) { background: #eee; }
+        p::first-letter { font-size: 2rem; color: darkred; }
+        h2::before { content: "# "; color: orange; }
+    </style>
+</head>
+<body>
+    <div id="header"><h1>Selectors & Pseudo-elements</h1></div>
+    <div class="card">
+        <h2>Topic Overview</h2>
+        <p>Standard paragraph with a styled first letter.</p>
+        <ul>
+            <li>First (Bold)</li>
+            <li>Second (Gray BG)</li>
+            <li>Third</li>
+        </ul>
+        <a href="https://site.com">Secure Link (Green)</a> | 
+        <a href="lab.pdf">PDF Link (Red)</a>
+    </div>
+</body>
+</html>

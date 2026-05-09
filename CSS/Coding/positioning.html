@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .parent {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            background: lightblue;
+            margin: 50px;
+            padding: 10px;
+        }
+        .badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            background: yellow;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky-header">Sticky Header</div>
+    <div class="parent">
+        Relative Parent
+        <div class="badge"></div>
+    </div>
+</body>
+</html>

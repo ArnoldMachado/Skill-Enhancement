@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        nav a { color: blue; text-decoration: none; margin-right: 10px; }
+        div p { color: #333; }
+        ul > li { list-style: square; }
+        .box p { color: red; } 
+        .box > p { color: blue; } 
+        h2 + p { font-size: 18px; color: #555; }
+        h2 ~ p { margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <nav><a href="#">Home</a><a href="#">About</a></nav>
+    <div class="box">
+        <h2>Combinators</h2>
+        <p>Direct child paragraph (Blue).</p>
+        <div><p>Descendant paragraph (Red).</p></div>
+        <p>Another paragraph affected by the sibling selector.</p>
+    </div>
+</body>
+</html>

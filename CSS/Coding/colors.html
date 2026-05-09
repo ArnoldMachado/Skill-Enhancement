@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .box { background: #ff4500; color: #ffffff; padding: 20px; margin-bottom: 10px; }
+        .overlay { background: rgba(0, 0, 0, 0.5); color: white; padding: 10px; }
+        .gradient { 
+            height: 100px; 
+            background: linear-gradient(to right, #ff4500, #1a1a2e); 
+            display: flex; align-items: center; justify-content: center; color: white;
+        }
+        .gradient-circle {
+            width: 100px; height: 100px;
+            background: radial-gradient(circle, #ff4500, #1a1a2e);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Hex Color Box</div>
+    <div class="gradient">Linear Gradient</div>
+    <div class="overlay">RGBA Transparency</div>
+    <div class="gradient-circle"></div>
+</body>
+</html>
