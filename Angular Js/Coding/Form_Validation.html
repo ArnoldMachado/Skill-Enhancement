@@ -19,7 +19,7 @@ app.directive('myDirective', function() {
         require: 'ngModel',
         link: function(scope, element, attr, mCtrl) {
             function myValidation(value) {
-                if (value.indexOf("gabriel") > -1) {
+                if (value.indexOf("Arnold") > -1) {
                     mCtrl.$setValidity('charE', true);
                 } else {
                     mCtrl.$setValidity('charE', false);
@@ -32,7 +32,7 @@ app.directive('myDirective', function() {
 });
 </script>
 
-<p>The input field must contain the character "gabriel" to be consider valid.</p>
+<p>The input field must contain the character "Arnold" to be consider valid.</p>
 
 </body>
 </html>
