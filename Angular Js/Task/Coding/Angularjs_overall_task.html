@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <title>Marks Calculator</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-controller="ctrl">
+
+  <h2>Marks Calculator</h2>
+
+  <input type="number" ng-model="m1" placeholder="Mark 1"><br><br>
+  <input type="number" ng-model="m2" placeholder="Mark 2"><br><br>
+  <input type="number" ng-model="m3" placeholder="Mark 3"><br><br>
+
+  <button ng-click="calc()">Calculate</button>
+
+  <h3>Total = {{total}}</h3>
+  <h3>Average = {{avg}}</h3>
+
+  <script>
+    angular.module("app", [])
+
+    .controller("ctrl", function($scope){
+
+      $scope.calc = function(){
+
+        $scope.total =
+          (+$scope.m1) +
+          (+$scope.m2) +
+          (+$scope.m3);
+
+        $scope.avg = $scope.total / 3;
+      };
+
+    });
+  </script>
+
+</body>
+</html>
